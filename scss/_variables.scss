@@ -1,0 +1,52 @@
+$fontSize: 18px;
+$darkCyan: hsl(185, 75%, 39%);
+$veryDarkBlue: hsl(229, 23%, 23%);
+$darkGrayBlue: hsl(227, 10%, 46%);
+$darkGray: hsl(0, 0%, 59%);
+$white: white;
+
+$kumbhSans: "https://fonts.google.com/specimen/Kumbh+Sans";
+$bg-pattern-bottom: "images/bg-pattern-bottom.svg";
+$bg-pattern-card: "images/bg-pattern-card.svg";
+$bg-pattern-top: "images/bg-pattern-top.svg";
+$photo: "images/image-victor.jpg";
+
+@mixin phone_portrait {
+    @media screen and (min-device-width : 320px)
+    and (max-device-width : 568px)
+    and (orientation : portrait){
+        @content;
+    }
+}
+
+@mixin phone_landscape {
+    @media screen and (min-device-width : 320px)
+            and (max-device-width : 568px)
+            and (orientation : landscape){
+                @content;
+            }
+}
+
+@mixin laptop_desktop {
+    @media only screen
+        and (min-device-width : 569px) 
+        and (max-width : 1823px){
+        /* STYLES GO HERE */
+            @content;
+        }
+}
+
+@mixin large_screen {
+    @media only screen
+        and (min-width : 1824px) {
+
+        @content;
+        }
+}
+
+@mixin laptop_and_large_screen {
+    @media only screen
+        and (min-device-width : 569px)  {
+        @content;
+        }
+}

@@ -1,0 +1,82 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@font-face {
+  src: url("https://fonts.google.com/specimen/Kumbh+Sans");
+  font-family: "kumbh Sans";
+  font-weight: 400 700;
+}
+body {
+  font-family: "kumbh Sans", sans-serif;
+  color: #2d3248;
+  font-size: 18px;
+  background-color: #19a2ae;
+  overflow: hidden;
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-position: top left, bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/bg-pattern-card.svg");
+  border-radius: 1rem 1rem 0 0;
+  height: 150px;
+}
+.card .card-top img {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  top: 4rem;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+.card .card-info {
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+.card .card-info > h3 {
+  margin-top: 4rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.card .card-info p {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 0px;
+}
+.card .card-info span {
+  color: #6a6f81;
+}
+.card .card-info .social-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+@media only screen and (min-device-width: 569px) {
+  .card {
+    width: 45%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
